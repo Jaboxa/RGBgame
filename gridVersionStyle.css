@@ -1,0 +1,160 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+	height: 100%;
+	width:100%;
+}
+h1{
+	padding: 20px 0;
+	color: white;
+	text-align: center;
+	line-height: 1.1;
+	margin: 0;
+	background-color: rgb(115, 115, 115);
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.stripe{
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+.grid-container{
+	margin: 20px auto;
+	max-width: 600px;
+  	display: grid;
+  	grid-template-columns: 80px 80px 80px 80px 80px 80px ;
+  	grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+}
+.square{
+	background-color: #232323;
+	padding-bottom: 30%;
+	float:left;
+	border-radius: 15%;
+	transition: background 0.5s;
+	--webkit-transition: background 0.5s ;
+	--moz-transition: background 0.5s ;
+}
+.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six {
+	display:none;
+	color: black;
+}
+#colorCode{
+	font-size: 200%;
+}
+.selected{
+	background-color: rgb(115, 115, 115);
+	color: white;
+}
+#message{
+	display: inline-block;
+	width: 20%;
+}
+button{ 
+	background-color: white;
+	border:none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: rgb(115, 115, 115);
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.6s;
+	--webkit-transition: all 0.6s ;
+	--moz-transition: all 0.6s ;
+	outline: none;
+}
+button:hover {
+	background-color: rgb(115, 115, 115);
+	color: white;
+}
+/*mobile devices*/
+@media screen and (max-width: 800px) {
+	button, #stripe {
+    	font-size: 70%;
+  	}
+	#colorCode{
+		font-size: 150%;
+	}
+	.grid-container{
+	margin: 20px auto;
+	max-width: 400px;
+  	display: grid;
+  	grid-template-columns: 60px 60px 60px 60px 60px 60px ;
+  	grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	button, #stripe {
+    	font-size: 60%;
+  	}
+	#colorCode{
+		font-size: 150%;
+	}
+	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
+		display:block;
+	}
+	#easy, #hard, #medium, #super, #mega, #impossible{
+		display: none;
+	}
+	.grid-container{
+	margin: 20px auto;
+	max-width: 400px;
+  	display: grid;
+  	grid-template-columns: 60px 60px 60px 60px 60px 60px ;
+  	grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+	}
+}
+@media screen and (max-width: 545px) {
+	button, #stripe {
+    	font-size: 50%;
+  	}
+	#colorCode{
+		font-size: 100%;
+	}
+	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
+		display:block;
+	}
+	#easy, #hard, #medium, #super, #mega, #impossible{
+		display: none;
+	}
+	.grid-container{
+	margin: 20px auto;
+	max-width: 250px;
+  	display: grid;
+  	grid-template-columns: 40px 40px 40px 40px 40px 40px ;
+  	grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+	}	
+}
+/*this is for older phones* iphone 5 etc*/
+@media screen and (max-width: 374px) {
+	h1 {
+    	font-size: 80%;
+  	}
+	button, #stripe {
+    	font-size: 40%;
+  	}
+	#colorCode{
+		font-size: 100%;
+	}
+	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
+		display:block;
+	}
+	#easy, #hard, #medium, #super, #mega, #impossible{
+		display: none;
+	}
+	.grid-container{
+	margin: 20px auto;
+	max-width: 250px;
+  	display: grid;
+  	grid-template-columns: 40px 40px 40px 40px 40px 40px ;
+  	grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+	}
+}
+
+
+
+
