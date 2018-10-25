@@ -88,14 +88,16 @@ button:hover {
 }
 
 @media screen and (max-width: 700px) {
-	button, #stripe {
-    	font-size: 60%;
+	#reset{
+  		font-size: 60%;
+  		height: 80%;
   	}
 	#colorCode{
 		font-size: 150%;
 	}
 	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
 		display:block;
+		font-size: 150%; 
 	}
 	#easy, #hard, #medium, #super, #mega, #impossible{
 		display: none;
@@ -109,14 +111,16 @@ button:hover {
 	}
 }
 @media screen and (max-width: 545px) {
-	button, #stripe {
-    	font-size: 50%;
+  	#reset{
+  		font-size: 50%;
+  		height: 80%;
   	}
 	#colorCode{
 		font-size: 100%;
 	}
 	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
 		display:block;
+		font-size: 150%; 
 	}
 	#easy, #hard, #medium, #super, #mega, #impossible{
 		display: none;
@@ -134,14 +138,16 @@ button:hover {
 	h1 {
     	font-size: 80%;
   	}
-	button, #stripe {
-    	font-size: 40%;
+  	#reset{
+  		font-size: 50%;
+  		 height: 80%;
   	}
 	#colorCode{
 		font-size: 100%;
 	}
 	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
 		display:block;
+		font-size: 120%; 
 	}
 	#easy, #hard, #medium, #super, #mega, #impossible{
 		display: none;
