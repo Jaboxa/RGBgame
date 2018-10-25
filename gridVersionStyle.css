@@ -70,6 +70,7 @@ button:hover {
 	background-color: rgb(115, 115, 115);
 	color: white;
 }
+
 /*mobile devices*/
 @media screen and (max-width: 800px) {
 	button, #stripe {
@@ -147,7 +148,33 @@ button:hover {
 	}
 	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
 		display:block;
-		font-size: 120%; 
+		font-size: 100%; 
+	}
+	#easy, #hard, #medium, #super, #mega, #impossible{
+		display: none;
+	}
+	.grid-container{
+	margin: 20px auto;
+	max-width: 250px;
+  	display: grid;
+  	grid-template-columns: 40px 40px 40px 40px 40px 40px ;
+  	grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+	}
+
+@media screen and (max-width: 300px) {
+	h1 {
+    	font-size: 80%;
+  	}
+  	#reset{
+  		font-size: 50%;
+  		 height: 80%;
+  	}
+	#colorCode{
+		font-size: 100%;
+	}
+	.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five, .fa-dice-six{
+		display:block;
+		font-size: 80%; 
 	}
 	#easy, #hard, #medium, #super, #mega, #impossible{
 		display: none;
@@ -160,7 +187,6 @@ button:hover {
   	grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
 	}
 }
-
 
 
 
