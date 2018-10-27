@@ -44,6 +44,13 @@ h1{
 #colorCode{
 	font-size: 200%;
 }
+#howTo{
+	background-color:transparent;
+	color: white;
+}
+#howTo:active{
+	color: black;
+}
 .selected{
 	background-color: rgb(115, 115, 115);
 	color: white;
@@ -66,7 +73,7 @@ button{
 	--moz-transition: all 0.6s ;
 	outline: none;
 }
-button:hover {
+button:active {
 	background-color: rgb(115, 115, 115);
 	color: white;
 }
@@ -115,6 +122,9 @@ button:hover {
 	}
 }
 @media screen and (max-width: 545px) {
+	#howTo {
+    	font-size: 80%;
+  	}
 	button{
 		padding:0px;
 	}
@@ -142,7 +152,7 @@ button:hover {
 }
 /*this is for older phones* iphone 5 etc*/
 @media screen and (max-width: 374px) {
-	h1 {
+	h1, #howTo {
     	font-size: 80%;
   	}
 	button{

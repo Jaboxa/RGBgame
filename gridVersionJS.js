@@ -8,6 +8,7 @@ var message = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
+var howToButton = document.querySelector("#howTo");
 
 init();
 
@@ -124,4 +125,9 @@ function pickColor(){
 	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
+
+howTo.addEventListener("click", function(){
+	alert("RGB stands for red, green and blue and can range from 0-255. All 255 = white, all 0 = black. All equal, different shades of gray. Try to remember the RGB color wheel from preschool and take a guess.")
+
+});
 
