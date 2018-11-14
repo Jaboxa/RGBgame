@@ -6,11 +6,13 @@ body{
 	width:100%;
 }
 h1{
-	padding: 20vw 0;
+	padding-top: 5vw;
+	padding-bottom: 2vw;
 	color: white;
 	text-align: center;
 	line-height: 1.1;
 	margin: 0;
+	margin-top: 3vw;
 	background-color: #4B515D;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -106,6 +108,10 @@ button:active, button:hover {
 }
 
 @media screen and (max-width: 700px) {
+	h1{
+		padding-top: 10vw;
+		margin-top: 5vw;
+	}
 	button{
 		padding:1vw;
 	}
@@ -178,7 +184,9 @@ button:active, button:hover {
 		padding:1vw;
 	}
 	h1{
-		height: 60vw;
+		max-height: 60vw;
+		padding-top: 15vw;
+		margin-top: 3vw;
 	}
 	.stripe{
   		font-size: 85%;
