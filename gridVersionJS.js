@@ -83,7 +83,7 @@ function reset(){
 			squares[i].style.display = "none";
 		}
 	}
-	h1.style.backgroundColor = "rgb(115,115,115)";
+	h1.style.backgroundColor = "#4B515D";
 }
 //reset button that will reset using the reset() function and then set the h1 to the starting color.
 resetButton.addEventListener("click", function(){
